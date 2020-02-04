@@ -1,0 +1,55 @@
+body{
+  background-color: #f6f9fc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top:50px;
+}
+
+.canvas{
+  width:700px;
+  height: 700px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11);
+}
+.colorList{
+  list-style-type: none;
+}
+
+.colorList li{
+  display: inline;
+}
+.colorList li button{
+  border: none;
+  padding:10px 20px;
+  margin: 5px 5px;
+  border-radius: 50%;
+}
+.colorList li #button_1{
+  background-color: #121111;
+}
+.colorList li #button_2{
+  background-color: #f5f0f0;
+}
+.colorList li #button_3{
+  background-color: #f03232;
+}
+.colorList li #button_4{
+  background-color: #db542e;
+}
+.colorList li #button_5{
+  background-color: #dbca2e;
+}
+.colorList li #button_6{
+  background-color: #2edb5c;
+}
+.colorList li #button_7{
+  background-color: #2ea4db;
+}
+.colorList li #button_8{
+  background-color: #2e56db;
+}
+.colorList li #button_9{
+  background-color: #762edb;
+}
