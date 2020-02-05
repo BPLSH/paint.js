@@ -7,11 +7,35 @@ body{
 }
 
 .canvas{
-  width:700px;
-  height: 700px;
+  width:600px;
+  height: 500px;
   background-color: white;
   border-radius: 15px;
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11);
+}
+.canvas__mirror {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.controls{
+  text-align: center;
+}
+.controlsRange{
+  margin-top : 10px;
+}
+.controlBtns{
+  margin-top: 10px;
+}
+.controlBtn{
+  width:100px;
+  height:30px;
+  margin: 5px;
+}
+.controlBtn:acitve{
+  transform : scale(0.98);
 }
 .colorList{
   list-style-type: none;
@@ -25,31 +49,4 @@ body{
   padding:10px 20px;
   margin: 5px 5px;
   border-radius: 50%;
-}
-.colorList li #button_1{
-  background-color: #121111;
-}
-.colorList li #button_2{
-  background-color: #f5f0f0;
-}
-.colorList li #button_3{
-  background-color: #f03232;
-}
-.colorList li #button_4{
-  background-color: #db542e;
-}
-.colorList li #button_5{
-  background-color: #dbca2e;
-}
-.colorList li #button_6{
-  background-color: #2edb5c;
-}
-.colorList li #button_7{
-  background-color: #2ea4db;
-}
-.colorList li #button_8{
-  background-color: #2e56db;
-}
-.colorList li #button_9{
-  background-color: #762edb;
 }
