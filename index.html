@@ -7,22 +7,31 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 
   <body>
-    <canvas id="jsCanvas" class="canvas"></canvas>
-    <div class="colors">
-      <ul class="colorList">
-        <li><button id = "button_1" onclick="changeColor('#121111');"></button></li>
-        <li><button id = "button_2" onclick="changeColor('#f5f0f0');"></button></li>
-        <li><button id = "button_3"onclick="changeColor('#f03232');"></button></li>
-        <li><button id = "button_4"onclick="changeColor('#db542e');"></button></li>
-        <li><button id = "button_5"onclick="changeColor('#dbca2e');"></button></li>
-        <li><button id = "button_6"onclick="changeColor('#2edb5c');"></button></li>
-        <li><button id = "button_7"onclick="changeColor('#2ea4db');"></button></li>
-        <li><button id = "button_8"onclick="changeColor('#2e56db');"></button></li>
-        <li><button id = "button_9"onclick="changeColor('#762edb');"></button></li>
-      </ul>
-    </div>
-    <script type="text/javascript" src="app.js">
+    <canvas id="jsCanvas" class="canvas" onload="drawCanavas"></canvas>
+    
+    <div class="controls">
+      <div>
+        <input type="range" id="range" min="1" max="10" value="5" step="0.1" >
+      </div>
+      <div class="controlBtns">
+        <button id="change" class="controlBtn">Paint</button>
+        <button id="save" class="controlBtn" download="my-file-name.png">Save</button>
+      </div>
 
-    </script>
+      <div class="colors">
+        <ul class="colorList">
+          <li><button style="background-color:#121111"></button></li>
+          <li><button style="background-color:#f5f0f0"></button></li>
+          <li><button style="background-color:#f03232"></button></li>
+          <li><button style="background-color:#db542e"></button></li>
+          <li><button style="background-color:#dbca2e"></button></li>
+          <li><button style="background-color:#2edb5c"></button></li>
+          <li><button style="background-color:#2ea4db"></button></li>
+          <li><button style="background-color:#2e56db"></button></li>
+          <li><button style="background-color:#762edb"></button></li>
+        </ul>
+      </div>
+    </div>
+    <script type="text/javascript" src="app.js"></script>
   </body>
 </html>
